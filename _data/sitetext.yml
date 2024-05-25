@@ -1,0 +1,468 @@
+#
+# Work based on https://github.com/mmistakes/minimal-mistakes/blob/master/_data/ui-text.yml
+#
+# Configuration: Add to _config.yml
+# locale: "en-US"  [YOUR PREFERRED LOCALE]
+#
+# How to use:
+# {{ site.data.ui-text[site.locale].<var_name> | default: 'text' }}
+
+# English (default)
+# -----------------
+en: &DEFAULT_EN
+  header:
+    title: Welcome to my website!
+    text: This is a website for producing glass cups
+    button: Tell Me More
+    buttonlink: "#services"
+
+  services:
+    title: " activities"
+    text: "This module is used to publish new activities"
+    section: services
+    list:
+      - title: "Creative Design Competition"
+        desc: "Do you have creativity? We are looking for the next most unique glass cup design! Participate in our creative design competition, showcase your ideas, and have the opportunity to turn your designs into real products!"
+        icon: fas fa-magic #find more at https://fontawesome.com/icons
+      - title: "Glass Craft Experience Day"
+        desc: "Bring your family and friends to join our Glass Craft Experience Day! In this exciting event, you will have the opportunity to make your own glass by hand. Our professional craftsmen will personally guide you to experience the fun and challenges of glass craftsmanship."
+        icon: fas fa-hands
+      - title: "Anniversary Celebration Special Offer"
+        desc: "To thank you for your support and trust over the years, we have held an anniversary celebration special offer! At this special moment, we have launched a series of limited time promotions and discounts, allowing you to purchase our exquisite glass cups at a more favorable price."
+        icon: fa fa-calendar-day
+
+  portfolio:
+    title: "Product"
+    text: "This module is used to showcase the products we produce"
+    section: portfolio
+    closebutton: "Close Project"
+
+  timeline:
+    title: "Timeline"
+    text: "This module is used to introduce the development history of enterprises"
+    section: timeline
+    # left is the default
+    #start_align: "left"
+    events:
+      - title: "Building a brand and expanding the market"
+        year: "2016-2020"
+        desc: "During this period, the company has been committed to establishing its own brand image and market position. Through continuous research and innovation, the company has launched a series of uniquely designed and high-quality glass cup products to meet the growing needs of consumers."
+        image: assets/img/timeline/1.jpeg
+        alt:
+      - title: "Transforming environmental protection and improving efficiency"
+        year: "2020-2023"
+        desc: "As consumer demand for environmentally friendly products continues to increase, the company will shift its focus to sustainable development and environmental protection concepts. The company has started researching and producing environmentally friendly glass cups made from recycled glass materials, and gradually phased out the traditional disposable plastic cup product line."
+        image: assets/img/timeline/2.jpeg
+        alt:
+      - title: "Leading environmental protection and intelligent production"
+        year: "2024"
+        desc: "In 2024, the company has become one of the leading enterprises in the field of environmentally friendly glass cups. The company continuously innovates and launches more product lines that meet market demand, including customized services and personalized designs, to meet the needs of different customer groups."
+        image: assets/img/timeline/3.jpeg
+        alt: image alt text
+    end: "Be Part <br> of Our <br> Story!"
+
+  about:
+    title: "recruit"
+    text: "This module is used to publish recruitment information"
+    body: "Join our team at Glass Cup Manufacturing Company! We're looking for a skilled Production Technician to operate machinery, ensure quality, and contribute to our dynamic production environment. If you have a passion for manufacturing and a keen eye for detail, apply now!"
+    section: about
+
+  clients:
+    section: clients
+    max-height: 100px
+    horizontal-scrolling: "" #"yes/no"
+    list:
+      - title: "envato"
+        url: https://github.com/raviriley/agency-jekyll-theme
+        logo: assets/img/clients/envato.jpg
+      - title: "designmodo"
+        url: https://github.com/raviriley/agency-jekyll-theme
+        logo: assets/img/clients/designmodo.jpg
+      - title: "themeforest"
+        url: https://github.com/raviriley/agency-jekyll-theme
+        logo: assets/img/clients/themeforest.jpg
+      - title: "Creative Market"
+        url: https://github.com/raviriley/agency-jekyll-theme
+        logo: assets/img/clients/creative-market.jpg
+
+  team:
+    title: "OUR AMAZING TEAM"
+    text: "This module is used to introduce the key personnel of our team."
+    subtext: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut eaque, laboriosam veritatis, quos non quis ad perspiciatis, totam corporis ea, alias ut unde. **Markdown** supported.
+    section: team
+    people:
+      - name: "Katerina"
+        role: "Lead Designer"
+        image: assets/img/team/1.jpg
+        social:
+          - url: https://twitter.com
+            icon: fab fa-twitter
+          - url: https://facebook.com
+            icon: fab fa-facebook-f
+          - url: https://linkedin.com
+            icon: fab fa-linkedin-in
+      - name: "Tianrui Fan"
+        role: "Boss"
+        image: assets/img/team/2.jpg
+        social:
+          - url: https://twitter.com
+            icon: fab fa-twitter
+          - url: https://facebook.com
+            icon: fab fa-facebook-f
+          - url: https://linkedin.com
+            icon: fab fa-linkedin-in
+      - name: "Diana"
+        role: "Lead Developer"
+        image: assets/img/team/3.jpg
+        social:
+          - url: https://twitter.com
+            icon: fab fa-twitter
+          - url: https://facebook.com
+            icon: fab fa-facebook-f
+          - url: https://linkedin.com
+            icon: fab fa-linkedin-in
+
+  contact:
+    title: "Contact Us"
+    text: "Send email to 755127681@qq.com"
+    section: contact
+    name: "Name*"
+    name-validation: "Please enter your name."
+    email: "Email*"
+    email-validation: "Please enter your email address."
+    phone: "Phone Number"
+    phone-validation: "Please enter your phone number."
+    message: "Message*"
+    message-validation: "Please enter a message."
+    subject: "Contact Form Submission"
+    submit: "Send Message"
+
+  footer:
+    legal: "Privacy Policy"
+    social:
+      - url: https://twitter.com
+        icon: "fab fa-twitter"
+      - url: https://facebook.com
+        icon: "fab fa-facebook-f"
+      - url: https://linkedin.com
+        icon: "fab fa-linkedin-in"
+      - url: https://github.com/raviriley/agency-jekyll-theme
+        icon: "fab fa-github"
+      - url: https://instagram.com
+        icon: "fab fa-instagram"
+en-US:
+  <<: *DEFAULT_EN
+en-CA:
+  <<: *DEFAULT_EN
+en-GB:
+  <<: *DEFAULT_EN
+en-AU:
+  <<: *DEFAULT_EN
+
+# Spanish
+# -------
+es: &DEFAULT_ES
+  header:
+    title: ¡Bienvenido a nuestro Estudio!
+    text: Es un placer conocerle
+    button: Ver más
+    buttonlink: "#servicios"
+
+  services:
+    title: "Servicios"
+    text: "Lorem ipsum"
+    section: servicios
+    list:
+      - title: "Comercio Electrónico"
+        desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit."
+        icon: fas fa-shopping-cart #find more at https://fontawesome.com/icons
+      - title: "Diseño Responsivo"
+        desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit."
+        icon: fas fa-laptop
+      - title: "[Markdown](https://en.wikipedia.org/wiki/Markdown)"
+        desc: "Su descripción aquí, soporte completo de **Markdown**"
+        icon: fab fa-markdown
+
+  product:
+    title: "Product"
+    text: "Lorem ipsum dolor sit amet consectetur."
+    section: product
+    closebutton: "Cerrar Proyecto"
+
+  timeline:
+    title: "Cronología"
+    text: "Lorem ipsum timeline"
+    section: cronologia
+    # left is the default
+    #start_align: "left"
+    events:
+      - title: "Nuestro Humilde Comienzo"
+        year: "2009-2011"
+        desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!"
+        image: assets/img/timeline/1.jpg
+        alt:
+      - title: "Una Agencia nace"
+        year: "March 2011"
+        desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!"
+        image: assets/img/timeline/2.jpg
+        alt:
+      - title: "La plantilla Jekyll es creada"
+        year: "2019"
+        desc: "Ravi Riley convirtió Agency, una plantilla basada en Bootstrap, en una plantilla de Jekyll. La plantilla Jekyll puede ser instalada commo una gema de Ruby (Ruby gem) o remotamente. Para más información, visite la documentación."
+        image: assets/img/timeline/3.jpg
+        alt: image alt text
+      - title: "Título"
+        year: "2009-2011"
+        desc: "Su descripción aquí, **Markdown** es soportado completamente."
+        image: assets/img/timeline/4.jpg
+        alt:
+        # you can enforce the alignment
+        align: right
+    end: "¡Se parte <br> de Nuestra <br> Historia!"
+
+  about:
+    title: "Sobre nosotros"
+    text: "nuestra historia"
+    body: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut eaque, laboriosam veritatis, quos non quis ad perspiciatis, totam corporis ea, alias ut unde. **Markdown** supported."
+    section: nosotros
+
+  clients:
+    section: clientes
+    max-height: 100px
+    horizontal-scrolling: "" #"yes/no"
+    list:
+      - title: "envato"
+        url: https://github.com/raviriley/agency-jekyll-theme
+        logo: assets/img/clients/envato.jpg
+      - title: "designmodo"
+        url: https://github.com/raviriley/agency-jekyll-theme
+        logo: assets/img/clients/designmodo.jpg
+      - title: "themeforest"
+        url: https://github.com/raviriley/agency-jekyll-theme
+        logo: assets/img/clients/themeforest.jpg
+      - title: "Creative Market"
+        url: https://github.com/raviriley/agency-jekyll-theme
+        logo: assets/img/clients/creative-market.jpg
+
+  team:
+    title: "NUESTRO INCREÍBLE EQUIPO"
+    text: "Lorem ipsum dolor sit amet consectetur."
+    subtext: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut eaque, laboriosam veritatis, quos non quis ad perspiciatis, totam corporis ea, alias ut unde. **Markdown** supported.
+    section: equipo
+    people:
+      - name: "Kay Garland"
+        role: "Lead Designer"
+        image: assets/img/team/500x500.jpg
+        social:
+          - url: https://twitter.com
+            icon: fab fa-twitter
+          - url: https://facebook.com
+            icon: fab fa-facebook-f
+          - url: https://linkedin.com
+            icon: fab fa-linkedin-in
+      - name: "Larry Parker"
+        role: "Lead Marketer"
+        image: assets/img/team/2.jpg
+        social:
+          - url: https://twitter.com
+            icon: fab fa-twitter
+          - url: https://facebook.com
+            icon: fab fa-facebook-f
+          - url: https://linkedin.com
+            icon: fab fa-linkedin-in
+      - name: "Diana Perterson"
+        role: "Lead Developer"
+        image: assets/img/team/500x500.jpg
+        social:
+          - url: https://twitter.com
+            icon: fab fa-twitter
+          - url: https://facebook.com
+            icon: fab fa-facebook-f
+          - url: https://linkedin.com
+            icon: fab fa-linkedin-in
+
+  contact:
+    title: "Contáctenos"
+    text: "Lorem ipsum or call 123456789"
+    section: contacto
+    name: "Nombre*"
+    name-validation: "Por favor ingrese su nombre."
+    email: "Correo Electrónico*"
+    email-validation: "Por favor ingrese su correo electrónico."
+    phone: "Número Telefónico*"
+    phone-validation: "Por favor ingrese su número telefónico."
+    message: "Mensaje*"
+    message-validation: "Por favor escriba un mensaje."
+    subject: "Envío del formulario de contacto"
+    submit: "Enviar Mensaje"
+
+  footer:
+    legal: "Política de Privacidad"
+    social:
+      - url: https://twitter.com
+        icon: "fab fa-twitter"
+      - url: https://facebook.com
+        icon: "fab fa-facebook-f"
+      - url: https://linkedin.com
+        icon: "fab fa-linkedin-in"
+      - url: https://github.com/raviriley/agency-jekyll-theme
+        icon: "fab fa-github"
+      - url: https://instagram.com
+        icon: "fab fa-instagram"
+es-ES:
+  <<: *DEFAULT_ES
+es-CO:
+  <<: *DEFAULT_ES
+
+# Deutsch
+# -----------------
+de: &DEFAULT_DE
+  header:
+    title: Willkommen auf unserer Webseite!
+    text: Schön das Sie hier sind!
+    button: Mehr erfahren
+    buttonlink: "#Angebote"
+
+  services:
+    title: "Leistungen"
+    text: "Was wir anbieten."
+    section: Leistungen
+    list:
+      - title: "E-Commerce"
+        desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit."
+        icon: fas fa-shopping-cart #find more at https://fontawesome.com/icons
+      - title: "Responsive Design"
+        desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit."
+        icon: fas fa-laptop
+      - title: "[Markdown](https://de.wikipedia.org/wiki/Markdown)"
+        desc: "Hier können Sie etwas mit **Markdown** einfügen."
+        icon: fab fa-markdown
+
+  product:
+    title: "Product"
+    text: "Lorem ipsum dolor sit amet consectetur."
+    section: Product
+    closebutton: "Schließen"
+
+  timeline:
+    title: "Geschichte"
+    text: "Lorem ipsum timeline"
+    section: Geschichte
+    # left is the default
+    #start_align: "left"
+    events:
+      - title: "Unsere Anfänge"
+        year: "2009-2011"
+        desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!"
+        image: assets/img/timeline/1.jpg
+        alt:
+      - title: "Gründung der Firma"
+        year: "März 2011"
+        desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!"
+        image: assets/img/timeline/2.jpg
+        alt:
+      - title: "Das Jekyll-Thema wurde erstellt"
+        year: "2019"
+        desc: "Ravi Riley wandelte Agency, ein auf Bootstrap basierendes Thema, in ein Jekyll-Thema um. Man kann das Jekyll-Thema als Ruby-Gem oder remotely installieren. Für mehr Informationen, schauen Sie sich die Dokumentation an."
+        image: assets/img/timeline/3.jpg
+        alt: Bildbeschreibung
+      - title: "Titel"
+        year: "2009-2011"
+        desc: "Hier können Sie etwas mit **Markdown** einfügen."
+        image: assets/img/timeline/4.jpg
+        alt:
+        # you can enforce the alignment
+        align: right
+    end: "Seien Sie <br> Teil unserer <br> Geschichte!"
+
+  about:
+    title: "Über uns"
+    text: "Unsere Geschichte."
+    body: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut eaque, laboriosam veritatis, quos non quis ad perspiciatis, totam corporis ea, alias ut unde. **Markdown** supported."
+    section: Ueber
+
+  clients:
+    section: Kunden
+    max-height: 100px
+    horizontal-scrolling: "" #"yes/no"
+    list:
+      - title: "envato"
+        url: https://github.com/raviriley/agency-jekyll-theme
+        logo: assets/img/clients/envato.jpg
+      - title: "designmodo"
+        url: https://github.com/raviriley/agency-jekyll-theme
+        logo: assets/img/clients/designmodo.jpg
+      - title: "themeforest"
+        url: https://github.com/raviriley/agency-jekyll-theme
+        logo: assets/img/clients/themeforest.jpg
+      - title: "Creative Market"
+        url: https://github.com/raviriley/agency-jekyll-theme
+        logo: assets/img/clients/creative-market.jpg
+
+  team:
+    title: "Unser großartiges Team"
+    text: "Lorem ipsum dolor sit amet consectetur."
+    subtext: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut eaque, laboriosam veritatis, quos non quis ad perspiciatis, totam corporis ea, alias ut unde. **Markdown** supported.
+    section: Team
+    people:
+      - name: "Kay Garland"
+        role: "Chef-Designer"
+        image: assets/img/team/500x500.jpg
+        social:
+          - url: https://twitter.com
+            icon: fab fa-twitter
+          - url: https://facebook.com
+            icon: fab fa-facebook-f
+          - url: https://linkedin.com
+            icon: fab fa-linkedin-in
+      - name: "Larry Parker"
+        role: "Chef der Werbeabteilung"
+        image: assets/img/team/2.jpg
+        social:
+          - url: https://twitter.com
+            icon: fab fa-twitter
+          - url: https://facebook.com
+            icon: fab fa-facebook-f
+          - url: https://linkedin.com
+            icon: fab fa-linkedin-in
+      - name: "Diana Perterson"
+        role: "Chef-Programmiererin"
+        image: assets/img/team/500x500.jpg
+        social:
+          - url: https://twitter.com
+            icon: fab fa-twitter
+          - url: https://facebook.com
+            icon: fab fa-facebook-f
+          - url: https://linkedin.com
+            icon: fab fa-linkedin-in
+
+  contact:
+    title: "Kontakt"
+    text: "Kontaktieren Sie uns."
+    section: Kontakt
+    name: "Name*"
+    name-validation: "Geben Sie einen Namen ein."
+    email: "E-Mail*"
+    email-validation: "Geben Sie Ihre E-Mail-Addresse ein."
+    phone: "Telefonnummer*"
+    phone-validation: "Geben Sie Ihre Telefonnummer ein."
+    message: "Nachricht*"
+    message-validation: "Schreiben Sie etwas..."
+    subject: "Kontakt-Formular Bestätigung"
+    submit: "Nachricht absenden"
+
+  footer:
+    legal: "Datenschutzerklärung"
+    social:
+      - url: https://twitter.com
+        icon: "fab fa-twitter"
+      - url: https://facebook.com
+        icon: "fab fa-facebook-f"
+      - url: https://linkedin.com
+        icon: "fab fa-linkedin-in"
+      - url: https://github.com/raviriley/agency-jekyll-theme
+        icon: "fab fa-github"
+      - url: https://instagram.com
+        icon: "fab fa-instagram"
+de-DE:
+  <<: *DEFAULT_DE
